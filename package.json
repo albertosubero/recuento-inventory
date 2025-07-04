@@ -8,7 +8,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve": "ng serve"
+    "serve": "ng serve",
+    "deploy": "ng build --base-href=/recuento-inventory/ && npx angular-cli-ghpages --dir=dist/recuento-inventory"
   },
   "dependencies": {
     "@angular/animations": "^18.0.0",
