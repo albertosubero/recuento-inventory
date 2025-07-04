@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "inventory-management": {
+    "recuento-inventory": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/inventory-management",
+            "outputPath": "dist/recuento-inventory",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [],
@@ -57,10 +57,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "inventory-management:build:production"
+              "buildTarget": "recuento-inventory:build:production"
             },
             "development": {
-              "buildTarget": "inventory-management:build:development"
+              "buildTarget": "recuento-inventory:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -68,7 +68,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "inventory-management:build"
+            "buildTarget": "recuento-inventory:build"
           }
         },
         "test": {
