@@ -78,11 +78,59 @@ export const routes: Routes = [
       },
     ],
   },
+  // {
+  //   path: "reportes",
+  //   loadComponent: () =>
+  //     import("./components/reports/reports.component").then(
+  //       (m) => m.ReportsComponent,
+  //     ),
+  //   canActivate: [AuthGuard],
+  // },
   {
-    path: "reportes",
+    path: "solicitud-pedido",
     loadComponent: () =>
-      import("./components/reports/reports.component").then(
-        (m) => m.ReportsComponent,
+      import("./components/order-request/order-request-form.component").then(
+        (m) => m.OrderRequestFormComponent,
+      ),
+    canActivate: [AuthGuard],
+  },
+  {
+    path: "pedidos",
+    loadComponent: () =>
+      import("./components/order-request/order-request-list.component").then(
+        (m) => m.OrderRequestListComponent,
+      ),
+    canActivate: [AuthGuard],
+  },
+  {
+    path: "facturas",
+    loadComponent: () =>
+      import("./components/invoice/invoice-list.component").then(
+        (m) => m.InvoiceListComponent,
+      ),
+    canActivate: [AuthGuard],
+  },
+  {
+    path: "registro-factura",
+    loadComponent: () =>
+      import("./components/invoice/invoice-register.component").then(
+        (m) => m.InvoiceRegisterComponent,
+      ),
+    canActivate: [AuthGuard],
+  },
+  {
+    path: "entregas",
+    loadComponent: () =>
+      import("./components/delivery/delivery-list.component").then(
+        (m) => m.DeliveryListComponent,
+      ),
+    canActivate: [AuthGuard],
+  },
+  {
+    path: "salida-pedido",
+    loadComponent: () =>
+      import("./components/delivery/delivery-order.component").then(
+        (m) => m.DeliveryOrderComponent,
       ),
     canActivate: [AuthGuard],
   },

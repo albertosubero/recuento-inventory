@@ -309,7 +309,7 @@ import { User } from "../../models/user.model";
         <h3 class="text-lg font-medium text-gray-900 mb-4">Accesos Rápidos</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           <a
-            routerLink="/productos/nuevo"
+            routerLink="/solicitud-pedido"
             class="flex items-center p-4 bg-primary-50 rounded-lg hover:bg-primary-100 transition-colors duration-200"
           >
             <div
@@ -328,13 +328,13 @@ import { User } from "../../models/user.model";
               </svg>
             </div>
             <div>
-              <p class="text-sm font-medium text-gray-900">Agregar Producto</p>
-              <p class="text-xs text-gray-600">Nuevo producto al inventario</p>
+              <p class="text-sm font-medium text-gray-900">Nueva Solicitud</p>
+              <p class="text-xs text-gray-600">Solicitud de pedido</p>
             </div>
           </a>
 
           <a
-            routerLink="/inventario/historial"
+            routerLink="/registro-factura"
             class="flex items-center p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-colors duration-200"
           >
             <div
@@ -342,24 +342,26 @@ import { User } from "../../models/user.model";
             >
               <svg
                 class="w-5 h-5 text-green-600"
-                fill="currentColor"
-                viewBox="0 0 20 20"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
               >
                 <path
-                  fill-rule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
-                  clip-rule="evenodd"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
                 ></path>
               </svg>
             </div>
             <div>
-              <p class="text-sm font-medium text-gray-900">Ver Historial</p>
-              <p class="text-xs text-gray-600">Movimientos de inventario</p>
+              <p class="text-sm font-medium text-gray-900">Registrar Factura</p>
+              <p class="text-xs text-gray-600">Agregar nueva factura</p>
             </div>
           </a>
 
           <a
-            routerLink="/reportes"
+            routerLink="/salida-pedido"
             class="flex items-center p-4 bg-purple-50 rounded-lg hover:bg-purple-100 transition-colors duration-200"
           >
             <div
@@ -367,22 +369,26 @@ import { User } from "../../models/user.model";
             >
               <svg
                 class="w-5 h-5 text-purple-600"
-                fill="currentColor"
-                viewBox="0 0 20 20"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
               >
                 <path
-                  d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
                 ></path>
               </svg>
             </div>
             <div>
-              <p class="text-sm font-medium text-gray-900">Generar Reportes</p>
-              <p class="text-xs text-gray-600">Análisis y estadísticas</p>
+              <p class="text-sm font-medium text-gray-900">Salida de Pedido</p>
+              <p class="text-xs text-gray-600">Procesar entrega</p>
             </div>
           </a>
 
           <a
-            routerLink="/stock"
+            routerLink="/productos/nuevo"
             class="flex items-center p-4 bg-orange-50 rounded-lg hover:bg-orange-100 transition-colors duration-200"
           >
             <div
@@ -394,13 +400,19 @@ import { User } from "../../models/user.model";
                 viewBox="0 0 20 20"
               >
                 <path
-                  d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
+                  fill-rule="evenodd"
+                  d="M4 3a2 2 0 100 4h12a2 2 0 100-4H4z"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  d="M3 8h14v7a2 2 0 01-2 2H5a2 2 0 01-2-2V8zm5 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
                 ></path>
               </svg>
             </div>
             <div>
-              <p class="text-sm font-medium text-gray-900">Gestionar Stock</p>
-              <p class="text-xs text-gray-600">Control de existencias</p>
+              <p class="text-sm font-medium text-gray-900">Agregar Producto</p>
+              <p class="text-xs text-gray-600">Nuevo producto</p>
             </div>
           </a>
         </div>

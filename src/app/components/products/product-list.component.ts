@@ -20,7 +20,7 @@ import { Product, ProductStatus } from "../../models/product.model";
           <h1 class="text-2xl font-bold text-gray-900">Productos</h1>
           <p class="text-gray-600">Gestión del catálogo de productos</p>
         </div>
-        <button
+        <a
           routerLink="/productos/nuevo"
           class="btn btn-primary flex items-center space-x-2"
         >
@@ -38,7 +38,7 @@ import { Product, ProductStatus } from "../../models/product.model";
             ></path>
           </svg>
           <span>Nuevo Producto</span>
-        </button>
+        </a>
       </div>
 
       <!-- Filtros y búsqueda -->
@@ -140,7 +140,7 @@ import { Product, ProductStatus } from "../../models/product.model";
             <div>
               <p class="text-sm font-medium text-gray-600">Valor Total</p>
               <p class="text-xl font-bold text-gray-900">
-                \${{ totalValue$ | async | number : "1.2-2" }}
+                \${{ totalValue$ | async | number: "1.2-2" }}
               </p>
             </div>
             <div
@@ -289,7 +289,7 @@ import { Product, ProductStatus } from "../../models/product.model";
                   </span>
                 </td>
                 <td class="text-sm text-gray-900">
-                  \${{ product.precio | number : "1.2-2" }}
+                  \${{ product.precio | number: "1.2-2" }}
                 </td>
                 <td>
                   <span
